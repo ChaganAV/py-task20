@@ -20,3 +20,11 @@ ruJ = ["Ж", "З", "Х", "Ц", "Ч"] # 5 очков
 ruSh = ["Ш", "Э", "Ю"] # 8 очков
 ruF = ["Ф", "Щ", "Ъ"] # 10 очков
 listRu = [[ruA,1],[ruD,2],[ruB,3],[ruI,4],[ruJ,5],[ruSh,8],[ruF,10]]
+
+# подсчет стоимости
+def PayWord(dict, word):
+    pay = 0
+    for w in word:
+        if w.upper() in dict:
+            pay+= int(dict.get(w.upper()))
+    return pay
