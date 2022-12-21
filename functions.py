@@ -1,8 +1,4 @@
-def Fill(dict,list,balls):
-    for a in list:
-        dict[a] = balls
-
-# englange
+# english
 A = ["A", "E", "I", "O", "U", "L", "N", "S", "T", "R"] # 1 очка
 D = ["D", "G"] # 2 очка
 B = ["B", "C", "M", "P"] # 3 очка
@@ -21,6 +17,11 @@ ruSh = ["Ш", "Э", "Ю"] # 8 очков
 ruF = ["Ф", "Щ", "Ъ"] # 10 очков
 listRu = [[ruA,1],[ruD,2],[ruB,3],[ruI,4],[ruJ,5],[ruSh,8],[ruF,10]]
 
+# заполним словарь
+def Fill(dict,list,balls):
+    for a in list:
+        dict[a] = balls
+        
 # подсчет стоимости
 def PayWord(dict, word):
     pay = 0

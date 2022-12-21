@@ -13,6 +13,7 @@ try:
     for l in f.listRu:
         f.Fill(dictRu,l[0],l[1])
     # print(dictRu)
+    # объединим словари для удобства поиска
     dicts = {**dictEn,**dictRu}
     print(dicts)
     # определим слово
