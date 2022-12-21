@@ -1,11 +1,12 @@
 import os
+import functions as f
 os.system('cls')
 # create to dictonary
 dictEn = {}
 dictRu = {}
-def Fill(dict,list,balls):
-    for a in list:
-        dict[a] = balls
+# def Fill(dict,list,balls):
+#     for a in list:
+#         dict[a] = balls
 # englange
 A = ["A", "E", "I", "O", "U", "L", "N", "S", "T", "R"] # 1 очка
 D = ["D", "G"] # 2 очка
@@ -25,10 +26,10 @@ ruSh = ["Ш", "Э", "Ю"] # 8 очков
 ruF = ["Ф", "Щ", "Ъ"] # 10 очков
 listRu = [[ruA,1],[ruD,2],[ruB,3],[ruI,4],[ruJ,5],[ruSh,8],[ruF,10]]
 for l in listEn:
-    Fill(dictEn, l[0], l[1])
+    f.Fill(dictEn, l[0], l[1])
 print(dictEn)
 #
 for l in listRu:
-    Fill(dictRu,l[0],l[1])
-
+    f.Fill(dictRu,l[0],l[1])
 print(dictRu)
+# 
